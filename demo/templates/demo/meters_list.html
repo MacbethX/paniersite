@@ -1,0 +1,12 @@
+{% extends 'demo/base.html' %}
+
+{% block content %}
+{% for meter in meters %}
+    <div class="meter">
+        <p>mac: {{ meter.mac }}</p>
+        <p>longitude: {{ meter.longitute }}</p>
+        <p>latitude: {{ meter.latitude }}</p>
+        <p>transformer: {{ meter.transformer }}</p>
+    </div>
+{% endfor %}
+{% endblock content %}
